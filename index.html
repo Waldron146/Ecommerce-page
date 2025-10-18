@@ -1,15 +1,95 @@
+```html
+<div class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-8">
+          <h1 class="text-2xl">STORE</h1>
+          <nav class="hidden md:flex items-center gap-6">
+            <a href="#">Shop</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Brands</a>
+            <a href="#">Sale</a>
+          </nav>
+        </div>
+        <div class="hidden lg:flex items-center flex-1 max-w-md mx-8">
+          <input type="search" placeholder="Search products..." />
+        </div>
+        <div class="flex items-center gap-4">
+          <button><!-- Search icon --></button>
+          <button><!-- Cart icon with badge --></button>
+          <button><!-- User icon --></button>
+          <button><!-- Menu icon (mobile) --></button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Ecommerce Page</title>
-    </head>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl">
+        <h2 class="text-5xl mb-4">New Collection</h2>
+        <p class="text-xl mb-8">Discover our latest arrivals and exclusive products</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </section>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
+  <!-- Products Section -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="text-3xl mb-2">Featured Products</h2>
+        <p>X products available</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <!-- Category tabs: All, Electronics, Accessories, Bags -->
+        <!-- Filter button -->
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <!-- Product Card (repeated) -->
+      <div class="group bg-white rounded-lg overflow-hidden shadow-sm">
+        <div class="relative aspect-square">
+          <img src="..." alt="..." />
+          <span class="badge">New</span>
+          <button><!-- Heart icon --></button>
+        </div>
+        <div class="p-4">
+          <p class="text-sm">Category</p>
+          <h3>Product Name</h3>
+          <div class="flex items-center">
+            <!-- Star ratings -->
+          </div>
+          <div class="flex items-center justify-between">
+            <span>$299.99</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 mt-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand column -->
+        <!-- Shop links -->
+        <!-- Customer service links -->
+        <!-- Newsletter signup -->
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>© 2025 STORE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer (Sheet) - hidden by default -->
+</div>
+```
   
